@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studyidiom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyIdiom">
+        <activity android:name=".lph.activity.SoundSetActivity"></activity>
+        <activity android:name=".lph.activity.GameConnStageActivity" />
+        <activity android:name=".lph.activity.GameConnActivity" />
+        <activity android:name=".lph.activity.GameGuessStageActivity" />
+        <activity android:name=".lph.activity.PlayGuessActivity" />
+        <activity android:name=".lph.activity.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

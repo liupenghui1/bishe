@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">StudyIdiom</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lineColumns">4</string>
+    <string name="totalColumns">20</string>
+    <string name="lphipConfig">192.168.2.170</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_study">学习</string>
+    <string name="title_search">搜搜</string>
+    <string name="title_game">游戏</string>
+    <string name="title_save">收藏</string>
+    <string name="title_help">帮助</string>
+
+
+    <string name="tvGameGuess">猜成语</string>
+    <string name="tvGameWrite">成语填词</string>
+    <string name="tvGameConn">成语接龙</string>
+    <string name="score_30">30</string>
+    <string name="score_60">60</string>
+    <string name="tvGuessHelp_60">根据成语解释选择正确的成语，十道题以内累计得分六十即可闯关成功</string>
+    <string name="tvGuessHelp_30">根据成语解释选择正确的成语，十道题以内累计得分三十即可闯关成功</string>
+    <string name="tts_text">请输入要合成的文字</string>
+    <string name="app_label">塘上语音合成演示</string>
+    <string name="volume_label">音量:</string>
+    <string name="speed_label">语速:</string>
+    <string name="pitch_label">音高:</string>
+    <string name="freqscale_label">变声:</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    <string name="pause">暂停</string>
+    <string name="female_voice">女声</string>
+    <string name="male_voice">男声</string>
+    <string name="clear">清空</string>
+    <string name="zero">0</string>
+    <string name="tishiTime">100</string>
+    <string name="headRandom">2000</string>
+    <string name="finalCount">1</string>
+    <string name="showOffersWall">展示积分墙(全屏)</string>
+    <string name="showOffersDialog">展示积分墙(对话框)</string>
+    <string name="awardPoints">奖励10积分</string>
+    <string name="spendPoints">消费20积分</string>
+    <string name="showSpot">展示插播广告</string>
+    <string name="showSmartBanner">展示SmartBanner</string>
+    <string name="toAdActivity">无积分广告</string>
+    <string name="diy">自定义广告</string>
+    <string name="toOffersActivity">积分广告</string>
+    <string name="updateApp">检查应用更新</string>
+</resources>
