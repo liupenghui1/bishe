@@ -41,4 +41,16 @@ public class UserController {
 		}
 		return "wrong";
 	}
+	@ResponseBody
+	@RequestMapping(value = "/checkRegisterUsers")
+	public String checkRegisterUsers(@RequestParam(value = "name") String name, @RequestParam(value="pwd") String pwd) {
+		System.out.println("name="+name);
+		System.out.println("pwd="+pwd);
+		int userId = this.userService.checkRegisterUsers(name, pwd);
+		if(userId>0) {
+			System.out.println(userId);
+			return "right"+userId;
+		}
+		return "wrong";
+	}
 }

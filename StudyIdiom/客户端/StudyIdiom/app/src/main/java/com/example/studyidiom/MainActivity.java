@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTabHost;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     private Map<String, ImageView> imageViewMap=new HashMap<>();
     private Map<String, TextView> textViewHashMap=new HashMap<>();
     private FragmentTabHost fragmentTabHost;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.e("main","我自己瞎加的。。。。。。。。。。。。。");
         fragmentTabHost=findViewById(android.R.id.tabhost);
         Intent intent = getIntent();
         fragmentTabHost.setup(this,getSupportFragmentManager(),android.R.id.tabcontent);

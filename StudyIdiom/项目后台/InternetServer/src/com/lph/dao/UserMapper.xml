@@ -13,7 +13,10 @@
     <select id="findAllUser" resultMap="userMapper">
            select * from tbl_user
     </select>
-        <select id="checkUserByName" resultMap="userMapper">
+    <select id="checkUserByName" resultMap="userMapper">
            select * from tbl_user where username=#{arg0} and pwd=#{arg1}
     </select>
+    <insert id="checkRegisterUsers">
+          insert into tbl_user(username,pwd) values (#{arg0},#{arg1})
+    </insert>
 </mapper>

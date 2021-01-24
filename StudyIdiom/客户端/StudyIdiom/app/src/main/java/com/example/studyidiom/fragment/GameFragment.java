@@ -18,6 +18,7 @@ import com.example.studyidiom.lph.activity.GameConnStageActivity;
 import com.example.studyidiom.lph.activity.GameGuessStageActivity;
 import com.example.studyidiom.lph.activity.LoginActivity;
 import com.example.studyidiom.lph.activity.PlayGuessActivity;
+import com.example.studyidiom.lph.activity.RegisterActivity;
 import com.example.studyidiom.lph.view.GameStageView;
 
 import java.io.BufferedReader;
@@ -52,7 +53,7 @@ public class GameFragment extends Fragment {
                     Intent intent=new Intent(getContext(), GameGuessStageActivity.class);
                     intent.putExtra("guess_nowPosition",nowPosition+"");
                     startActivity(intent);
-                    getActivity().finish();
+//                    getActivity().finish();
                     break;
                 case 200:
                     String message2 = (String) msg.obj;
@@ -61,7 +62,7 @@ public class GameFragment extends Fragment {
                     Intent intent2=new Intent(getContext(), GameConnStageActivity.class);
                     intent2.putExtra("conn_nowPosition",nowPosition2+"");
                     startActivity(intent2);
-                    getActivity().finish();
+//                    getActivity().finish();
                     break;
             }
         }
@@ -85,7 +86,9 @@ public class GameFragment extends Fragment {
             btn_resfirst.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Intent intent=new Intent(getContext(), RegisterActivity.class);
+                    startActivity(intent);
+                    getActivity().finish();
                 }
             });
 
@@ -179,16 +182,5 @@ public class GameFragment extends Fragment {
             }
         }.start();
     }
-    //用户是否登录
-//    private boolean checkUserIsLogin() {
-//        SharedPreferences sharedPreferences=getContext().getSharedPreferences("userInfo",MODE_PRIVATE);
-//        String uName=sharedPreferences.getString("name","");
-//        String uTel=sharedPreferences.getString("phone","");
-//        if (uName.equals("") && uTel.equals("")){//用户名或者密码两个都为空，就是用户没登录
-//            return false;
-//        }else{//只要用户名或者密码有一个不为空，就是用户登录了
-//            id= Integer.parseInt(getContext().getSharedPreferences("userInfo",MODE_PRIVATE).getString("uId","0"));
-//            return true;
-//        }
-//    }
+
 }

@@ -8,4 +8,5 @@ import com.lph.entity.User;
 public interface UserMapper {
 	public List<User> findAllUser();
 	public User checkUserByName(String name,String pwd);
+	public int checkRegisterUsers(String name,String pwd);
 }

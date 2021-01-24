@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.example.studyidiom.R;
 import com.example.studyidiom.lph.activity.LoginActivity;
+import com.example.studyidiom.lph.activity.RegisterActivity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,7 +41,9 @@ public class MyFragment extends Fragment {
             btn_resfirst.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Intent intent=new Intent(getContext(), RegisterActivity.class);
+                    startActivity(intent);
+                    getActivity().finish();
                 }
             });
 

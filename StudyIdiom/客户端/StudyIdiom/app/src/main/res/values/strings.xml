@@ -5,6 +5,7 @@
     <string name="lineColumns">4</string>
     <string name="totalColumns">20</string>
     <string name="lphipConfig">192.168.2.170</string>
+    <!--    <string name="lphipConfig">192.168.43.128</string>-->
     <string name="title_activity_main">MainActivity</string>
     <string name="title_study">学习</string>
     <string name="title_search">搜搜</string>

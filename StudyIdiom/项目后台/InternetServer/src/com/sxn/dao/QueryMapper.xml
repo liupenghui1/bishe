@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:映射器接口的全名 -->
+<mapper namespace="com.sxn.dao.QueryMapper">
+    <!-- 结果映射 -->
+    <resultMap type="com.sxn.entity.Animal" id="queryMapper">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pronounce" property="pronounce"/>
+        <result column="antonym" property="antonym"/>
+        <result column="homoionym" property="homoionym"/>
+        <result column="derivation" property="derivation"/>
+        <result column="example" property="example"/>
+        <result column="explain" property="explain"/>
+    </resultMap>
+    <!-- 根据提示，查询成语，结果为一个集合 -->
+    <select id="findIdiomsByInfo" resultMap="queryMapper">
+           select * from tbl_idiom where name like CONCAT('%',#{info},'%') 
+    </select>
+</mapper>

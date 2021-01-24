@@ -13,6 +13,7 @@ import com.lph.entity.User;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
+
 @Service
 @Transactional(readOnly = false)
 public class UserService {
@@ -25,6 +26,9 @@ public class UserService {
 	@Transactional(readOnly=true)
 	public User checkUserByName(String name,String pwd){
 		return this.userMapper.checkUserByName(name, pwd);
+	}
+	public int checkRegisterUsers(String name,String pwd){
+		return this.userMapper.checkRegisterUsers(name, pwd);
 	}
 	public String toJsonArray(List<User> list) {
 		JSONArray array = new JSONArray();

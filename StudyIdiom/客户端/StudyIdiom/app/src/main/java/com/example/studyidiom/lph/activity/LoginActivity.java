@@ -27,7 +27,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText ed_name;
     private EditText ed_pwd;
     private Button btn_submit;
-    private Button btn_register;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -65,7 +64,6 @@ public class LoginActivity extends AppCompatActivity {
         ed_name = findViewById(R.id.ed_name);
         ed_pwd = findViewById(R.id.ed_pwd);
         btn_submit = findViewById(R.id.btn_submit);
-        btn_register = findViewById(R.id.btn_register);
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,12 +75,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        btn_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     private void checkLoginUsers(String name, String pwd) {
